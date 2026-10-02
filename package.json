@@ -1,0 +1,33 @@
+{
+  "name": "proyecto-qa-tienda",
+  "version": "1.0.0",
+  "description": "Proyecto Final de Aseguramiento de la Calidad - Grupo 10: pruebas automatizadas de OpenCart Demo (Abstracta) con Playwright y TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leotedd/Proyecto-QA-Tienda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/leotedd/Proyecto-QA-Tienda/issues"
+  },
+  "homepage": "https://github.com/leotedd/Proyecto-QA-Tienda#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
