@@ -1,11 +1,28 @@
-import type { Page } from '@playwright/test';
+import type { Locator, Page } from '@playwright/test';
 
 /**
  * Page Object: Página de inicio de sesión.
- *
- * TODO: definir localizadores y métodos después de inspeccionar la
- * aplicación real, cuando se implementen los casos correspondientes.
  */
 export class LoginPage {
-  constructor(readonly page: Page) {}
+  readonly emailInput: Locator;
+  readonly passwordInput: Locator;
+  readonly loginButton: Locator;
+  readonly warningAlert: Locator;
+
+  constructor(readonly page: Page) {
+    this.emailInput = page.getByLabel('E-Mail Address');
+    this.passwordInput = page.getByLabel('Password');
+    this.loginButton = page.getByRole('button', { name: 'Login' });
+    this.warningAlert = page.locator('.alert-danger');
+  }
+
+  async goto(): Promise<void> {
+    await this.page.goto('/index.php?route=account/login');
+  }
+
+  async login(email: string, password: string): Promise<void> {
+    await this.emailInput.fill(email);
+    await this.passwordInput.fill(password);
+    await this.loginButton.click();
+  }
 }
