@@ -67,7 +67,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | Se crea la cuenta; aparece "Your Account Has Been Created!" y el menú My Account muestra "Logout". |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F01_TC-R01_cuenta_creada.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F01_TC-R01_cuenta_creada.png` |
 | **Observaciones** | La cuenta creada se puede reutilizar como precondición de TC-L01. Ambiente (Chrome + versión + Windows) se registra al ejecutar. |
 
 ### TC-R02 – Registro con campos obligatorios vacíos
@@ -84,7 +84,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | El sistema impide el registro y muestra un mensaje de validación por cada campo obligatorio (First Name, Last Name, E-Mail, Telephone, Password) y la advertencia de la política de privacidad. |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F01_TC-R02_validaciones.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F01_TC-R02_validaciones.png` |
 | **Observaciones** | Técnica: valores en la frontera (campos vacíos). |
 
 ### TC-R03 – Registro con contraseñas que no coinciden
@@ -101,7 +101,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | El sistema impide el registro y muestra la validación "Password confirmation does not match password!" junto al campo de confirmación. |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F01_TC-R03_password_mismatch.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F01_TC-R03_password_mismatch.png` |
 | **Observaciones** | Técnica: partición de equivalencia (clase inválida de confirmación). |
 
 ### TC-R04 – Registro con un email ya utilizado
@@ -118,7 +118,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | El sistema rechaza el registro y muestra "Warning: E-Mail Address is already registered!". |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F01_TC-R04_email_duplicado.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F01_TC-R04_email_duplicado.png` |
 | **Observaciones** | Técnica: partición de equivalencia (email duplicado). |
 
 ---
@@ -139,7 +139,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | El usuario accede a "My Account"; se muestran las secciones My Account/My Orders/Newsletter y el menú muestra "Logout". |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F02_TC-L01_sesion_iniciada.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F02_TC-L01_sesion_iniciada.png` |
 | **Observaciones** | Depende de TC-R01; si no hay cuenta válida, el caso queda `BLOCKED`. |
 
 ### TC-L02 – Login con contraseña incorrecta
@@ -156,7 +156,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | El sistema rechaza el acceso y muestra "Warning: No match for E-Mail Address and/or Password."; permanece en la página de login. |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F02_TC-L02_password_incorrecta.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F02_TC-L02_password_incorrecta.png` |
 | **Observaciones** | Técnica: partición de equivalencia (credencial inválida). |
 
 ### TC-L04 – Login con campos vacíos
@@ -173,7 +173,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | El sistema no inicia sesión y muestra la advertencia de credenciales inválidas; permanece en la página de login. |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F02_TC-L04_campos_vacios.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F02_TC-L04_campos_vacios.png` |
 | **Observaciones** | Técnica: valores en la frontera (campos vacíos). El mensaje exacto se registra tal como aparezca al ejecutar. |
 
 ---
@@ -194,7 +194,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | Se muestra la página "Account Logout" con el mensaje de sesión finalizada; al volver a My Account sin sesión, OpenCart redirige al login. |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F03_TC-L03_logout.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F03_TC-L03_logout.png` |
 | **Observaciones** | — |
 
 ---
@@ -215,7 +215,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | Se muestra el mensaje de éxito de actualización; al reabrir Edit Account, el teléfono refleja el nuevo valor. |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F04_TC-P01_perfil_actualizado.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F04_TC-P01_perfil_actualizado.png` |
 | **Observaciones** | — |
 
 ### TC-P02 – Dejar el campo Nombre vacío al editar el perfil
@@ -232,7 +232,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | El sistema impide guardar y muestra la validación del campo First Name (longitud requerida). |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F04_TC-P02_nombre_vacio.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F04_TC-P02_nombre_vacio.png` |
 | **Observaciones** | Técnica: valores en la frontera. El mensaje exacto se registra al ejecutar. |
 
 ---
@@ -253,7 +253,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | Se muestra el mensaje de éxito del cambio; la contraseña anterior deja de funcionar (advertencia de credenciales inválidas) y la nueva permite iniciar sesión. |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F05_TC-P03_cambio_password.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F05_TC-P03_cambio_password.png` |
 | **Observaciones** | Usar una cuenta desechable para no afectar otras pruebas. |
 
 ---
@@ -279,7 +279,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | Se muestra la página "Search - iPhone" con el producto iPhone en los resultados (nombre, imagen y precio). |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F08_TC-N05_busqueda_iphone.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F08_TC-N05_busqueda_iphone.png` |
 | **Observaciones** | No requiere sesión. Caso adicional (complementa TC-N02 de Milton con otro producto). |
 
 ### TC-N06 – Visualización del detalle de un producto (adicional)
@@ -296,7 +296,7 @@ F04/F05 ≥2 (aquí 3 ✅).
 | **Resultado esperado** | Se muestra la página de detalle con toda la información principal del producto. |
 | **Resultado obtenido** | Pendiente de ejecución |
 | **Estado** | PENDIENTE |
-| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayanna/F08_TC-N06_detalle_iphone.png` |
+| **Evidencia** | (por capturar) `evidencias/casos-manuales/dayana/F08_TC-N06_detalle_iphone.png` |
 | **Observaciones** | Los valores concretos (precio, código, disponibilidad) se registran tal como aparezcan al ejecutar. |
 
 ---
