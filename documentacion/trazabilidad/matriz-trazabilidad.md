@@ -75,7 +75,7 @@ conocido.
 1. **Ejecución de los casos manuales F01–F05 y F08 adicionales** (Dayana): hoy
    en `PENDIENTE`; falta ejecutar y capturar evidencias.
 2. **Evidencias de los casos de Dayana**: aún no existen en
-   `evidencias/casos-manuales/dayanna/` (las rutas listadas son las previstas).
+   `evidencias/casos-manuales/dayana/` (las rutas listadas son las previstas).
 3. **GitHub Issue de DR-001**: verificar si existe y enlazarlo.
 4. **Reporte HTML de Playwright**: no versionado aún; se generará en la
    ejecución final de la suite.
