@@ -4,6 +4,11 @@ Responsable de la automatización: Teddy Hernández.
 
 Evidencias: [`evidencias/automatizadas/teddy/`](../evidencias/automatizadas/teddy/README.md).
 
+Casos de prueba automatizados (formato de la plantilla del catedrático):
+[`Casos_Prueba_Hernandez_Automatizacion.xlsx`](../documentacion/casos-prueba/Casos_Prueba_Hernandez_Automatizacion.xlsx).
+
+Video individual: [`evidencias/videos/teddy/README.md`](../evidencias/videos/teddy/README.md).
+
 ## Ambiente
 
 | Dato | Valor |
@@ -36,6 +41,16 @@ El total corresponde a las tres ejecuciones independientes, una por navegador.
 
 Las dos etiquetas suman las 25 pruebas de la suite: ninguna prueba queda sin
 etiqueta ni pertenece a ambas.
+
+### Verificación previa a la entrega (24/10/2026)
+
+| Verificación | Comando | Resultado |
+|--------------|---------|-----------|
+| Compilación TypeScript | `npx tsc --noEmit` | Sin errores |
+| Smoke en Chromium | `npx playwright test --grep @smoke --project=chromium --reporter=list` | 5 passed (28.1s) |
+
+Esta verificación se registró solo como salida de terminal; no generó un
+reporte HTML nuevo ni capturas.
 
 ## Defecto conocido: TC-N04 / DR-001
 
